@@ -84,6 +84,23 @@
             margin-bottom: 4rem;
         }
 
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 0 auto 2rem auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
         .hero h2 {
             font-size: 3rem;
             font-weight: 700;
@@ -257,6 +274,11 @@
                 gap: 1rem;
             }
 
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
             .hero h2 {
                 font-size: 2.2rem;
             }
@@ -285,6 +307,11 @@
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
             }
 
             .hero h2 {
@@ -351,6 +378,7 @@
     <main>
         <div class="container">
             <section class="hero">
+                <img src="images/profile-photo.jpg" alt="Piotr Majchrowski - Data Governance Expert" class="profile-photo">
                 <h2>Data Governance Expert</h2>
                 <p>8 lat doświadczenia w analizie danych, inżynierii danych, data science i zarządzaniu danymi</p>
             </section>
@@ -427,7 +455,7 @@
                 <a href="mailto:piotrmajchrowski92@gmail.com" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/piotr-majchrowski-aa6a9b164/" aria-label="LinkedIn" target="_blank" rel="noopener">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener">
